@@ -1,0 +1,11 @@
+body { 
+	margin:0;
+	padding:0; 
+	background-color: #4FC1E9;
+}
+
+#map { 
+	position:absolute;
+	top:200px;
+	bottom:0;width:100%;
+}	
