@@ -7,10 +7,13 @@
 <script src='https://api.tiles.mapbox.com/mapbox.js/v2.0.1/mapbox.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox.js/v2.0.1/mapbox.css' rel='stylesheet' />
 <link href='/style.css' rel='stylesheet'/>
+<script src="https://cdn.firebase.com/js/client/1.0.21/firebase.js"></script>
   
 </style>
 </head>
 <body>
+
+
 	<header>
 		<h1>Landmarked</h1>
 		<ul id="nav">
@@ -19,8 +22,20 @@
 			<li><a href="">Contact</a>
 		<ul>
 	</header>
+	
+	<div id='filters' class='ui-select'>
+  		<div><input type='checkbox' checked=checked class='filter'
+             name='filter' id='fast-food' value='fast-food'/><label for='fast-food'>fast-food</label></div>
+  		<div><input type='checkbox' checked=checked class='filter'
+             name='filter' id='bicycle' value='bicycle'/><label for='bicycle'>bicycle</label></div>
+  		<div><input type='checkbox' checked=checked class='filter'
+             name='filter' id='bar' value='bar'/><label for='bar'>bar</label></div>
+	</div>
 
 	<div id='map'></div>
+	<ul id='marker-list'></ul>
+
+
 	<script src='/script.js'></script>
 </body>
 </html>
