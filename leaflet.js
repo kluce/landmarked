@@ -11,13 +11,15 @@ L.mapbox.featureLayer({
         // coordinates here are in longitude, latitude order because
         // x, y is the standard for GeoJSON and many formats
         coordinates: [
-          -77.03221142292,
-          38.913371603574 
+          -73.955378,
+          40.735386
         ]
+
+        
     },
     properties: {
-        title: 'Peregrine Espresso',
-        description: '1718 14th St NW, Washington, DC',
+        title: 'Lobster Joint',
+        description: '1073 Manhattan Avenue, Brooklyn, NY 11222',
         // one can customize markers by adding simplestyle properties
         // https://www.mapbox.com/foundations/an-open-platform/#simplestyle
         'marker-size': 'large',

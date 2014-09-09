@@ -1,13 +1,20 @@
 body { 
 	margin:0;
 	padding:0; 
-	background-color: #4FC1E9;
+	background-image: url('http://trickvilla.com/wp-content/uploads/Wood-Floor-Background.jpg');
 }
 
 #map { 
 	position:absolute;
 	top:200px;
-	bottom:0;width:100%;
+	bottom:0;width:90%;
+  border-radius: 1em;
+        padding: 1em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
 }	
 
 .ui-select {
@@ -71,3 +78,4 @@ li {
   background-color: #fff; }  
 
 }
+
