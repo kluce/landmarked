@@ -1,5 +1,5 @@
 <head>
-
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -7,15 +7,62 @@
 
 <script>
 	
-	var foo = [{name: "One"},{name: "Two"},{name: "Three"},{name: {name: "Four"}}];
+	
 
-console.log(foo[3].name.name)
+	(function(){
+		// Create a Victor Contstuctor
+		var Victor = function (config) {
+			this.firstname = config.firstname || "Graeham";
+			this.lastname = config.lastname || "Watts";
+			this.height = config.height || "7'";
+			this.shoesize = config.shoesize || "11";
+			this.fullname = function () {
+
+				return (this.firstname + this.lastname);
+			}
+
+			var el = document.createElement("h1");
+			$(el).html(this.fullname());
+			$(el).css({
+				"background-color": "green",
+				"font-size": "30px",
+			});
+
+			$(el).bind('click', function(){
+				$(el).css({
+					"color": "pink",
+					"font-family": "Helvetica",
+				})
+			})
+			$('body').append(el);
+		}
+
+		var table = new Victor({
+			firstname: "Victor",
+			lastname: "Venters",
+			height: "6'7",
+			shoesize: "15"
+
+		});
+
+		var graham = new Victor({});
 
 
-	for(var i = 0; i < foo.length; i++) {
-		console.log(foo[i]);
+		// first name, lastname, height, shoe size
+		// full name method
+		// Append HTML Elem to the dom
+		// Click event -- Change the HTML in someway
+	
 
-	}
+		// Create an instance of the victor class
+		// Pass in config object
+
+
+	})();
+
+
+
+
 
 
 </script>

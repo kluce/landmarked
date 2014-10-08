@@ -2,43 +2,28 @@
 <html>
 <head>
 <meta charset=utf-8 />
-<title>A simple map</title>
-<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-<script src='https://api.tiles.mapbox.com/mapbox.js/v2.0.1/mapbox.js'></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100' rel='stylesheet' type='text/css'>
 <link href='https://api.tiles.mapbox.com/mapbox.js/v2.0.1/mapbox.css' rel='stylesheet' />
-<link href='/style.css' rel='stylesheet'/>
-<script src="https://cdn.firebase.com/js/client/1.0.21/firebase.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link href='style.css' rel='stylesheet'/>
+<title>A simple map</title>
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  
-</style>
+<script src='https://api.tiles.mapbox.com/mapbox.js/v2.0.1/mapbox.js'></script>
+
 </head>
-<body>
-
-
-	<header>
-		<h1>Landmarked</h1>
-		<ul id="nav">
-			<li><a href="">Home</a>
-			<li><a href="">Places</a>
-			<li><a href="">Contact</a>
-		<ul>
-	</header>
-
-	<div id='filters' class='ui-select'>
-  		<div><input type='checkbox' checked=checked class='filter'
-             name='filter' id='fast-food' value='fast-food'/><label for='fast-food'>fast-food</label></div>
-  		<div><input type='checkbox' checked=checked class='filter'
-             name='filter' id='bicycle' value='bicycle'/><label for='bicycle'>bicycle</label></div>
-  		<div><input type='checkbox' checked=checked class='filter'
-             name='filter' id='bar' value='bar'/><label for='bar'>bar</label></div>
-	</div>
-
-	<div id='map'></div>
-	<ul id='marker-list'></ul>
-	<br />
-	<button class='col6 margin3 fill-orange' onclick='fly();' id='fly'>Fly</button>
-
-
-	<script src='/script.js'></script>
+<body class="intro">
+	<div class="container-fluid">
+		<div class="row text-center">
+			<div class="col-sm-12 ">
+				
+				<a href="map.html">
+					<h1 class="title text-center">glassmarked</h1>
+					<img src="img/icon.png" class="logo tran">
+				</a>
+			</div><!--end column -->
+		</div> <!--end row-->
+	</div> <!-- end container -->
 </body>
 </html>
+
